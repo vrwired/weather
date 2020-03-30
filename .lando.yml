@@ -1,0 +1,12 @@
+name: vanilla
+recipe: drupal8
+config:
+  webroot: web
+
+services:
+  pma:
+    type: phpmyadmin
+
+proxy:
+  pma:
+   - pma-vanilla.lndo.site
