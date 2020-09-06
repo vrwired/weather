@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains weather_today.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function weather_today_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the weather_today module.
+    case 'help.page.weather_today':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Weather fed by API') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function weather_today_theme() {
+  $theme = [
+    'weather_today' => [
+      'render element' => 'children',
+      'variables' => [
+        'weather_var' => 'Default'
+      ],
+    ],
+  ];
+  return $theme;
+}

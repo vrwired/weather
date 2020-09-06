@@ -1,0 +1,13 @@
+{
+    "name": "weather_today",
+    "type": "drupal-module",
+    "description": "Weather fed by API",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/weather_today",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/weather_today",
+        "source": "http://cgit.drupalcode.org/weather_today"
+    }
+}

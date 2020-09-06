@@ -1,0 +1,7 @@
+weather_today.content:
+  path: '/weather'
+  defaults:
+    _controller: '\Drupal\weather_today\Controller\WeatherTodayController::content'
+    _title: 'Weather is coming up next!'
+  requirements:
+    _permission: 'access content'
